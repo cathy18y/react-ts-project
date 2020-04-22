@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "module": "es6", // es6 || commonjs
+    "target": "es5",
+    "jsx": "react",
+    "allowJs": true,
+    "moduleResolution": "node",  // 对.d.ts文件导入进行解析
+    "allowSyntheticDefaultImports": true, // 直接导入，不需要 * as object
+    "resolveJsonModule": true,   // 开启对.json文件的导入
+    "esModuleInterop": true
+  },
+  "include": [
+    "./src/**/*",
+    "./build/*"
+  ],
+  "exclude": [
+    "./node_modules"
+  ],
+  "extends": "./tslint"
+}

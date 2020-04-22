@@ -1,0 +1,28 @@
+{
+  "defaultSeverity": "error",
+  "jsRules": {},
+  "rules": {
+    "jsx-wrap-multiline": false, // override tslint-react rules here
+    "member-access": true, // 设置成员对象的访问权限（public,private,protect)
+    "no-empty-interface": true, // 不允许空接口
+    "indent": [true, "spaces"], // 每行以2个空格符开始
+    "no-trailing-whitespace": [  // 不允许空格结尾
+      true,
+      "ignore-comments",
+      "ignore-jsdoc",
+      "ignore-template-strings",
+      "ignore-blank-lines"
+    ],
+    "no-consecutive-blank-lines": [true, 1], // 不允许有空行
+    "align": [true, "arguments", "members", "parameters", "statements"], // 对齐风格 (elements)
+    "comment-format": {   // 注释格式
+      "options": [
+        "check-space"
+      ]
+    },
+    "quotemark": [true, "single", "avoid-escape", "avoid-template"], // 使用单引号
+    "no-var-requires": false
+  },
+  "extends": "tslint:recommended",
+  "rulesDirectory": ["./src/"]  // 使用规则的内容
+}
