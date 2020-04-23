@@ -11,10 +11,10 @@ class Detail extends React.Component<Params> {
     const { name, from } = this.props;
 
     return (
-      <div className={`text-center ${styles.pad}`}>
-        {name}
-        ----{from}
-      </div>
+        <div className={`text-center ${styles.pad}`}>
+          {name}
+          ----{from}
+        </div>
     );
   }
 }

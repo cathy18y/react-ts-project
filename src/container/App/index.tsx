@@ -4,24 +4,24 @@ import { withRouter } from 'react-router';
 import './styles.scss';
 
 class App extends React.Component {
-  constructor(props: any) {
-    super(props);
-    this.state = {};
-  }
+    constructor(props: any) {
+        super(props);
+        this.state = {};
+    }
 
-  public render() {
-    // const { location: { pathname }, history } = this.props;
-    console.log(this.props);
+    public render() {
+        // const { location: { pathname }, history } = this.props;
+        console.log(this.props);
 
-    return (
-      <div>
-        <div>
-          {/*<TopNav pathname={pathname} history={history} />*/}
-        </div>
-        {this.props.children}
-      </div>
-    );
-  }
+        return (
+            <div>
+                <div>
+                    {/*<TopNav pathname={pathname} history={history} />*/}
+                </div>
+                {this.props.children}
+            </div>
+        );
+    }
 }
 
 export default withRouter(App);
